@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background: #333;
+  color: #222;
+  position: relative;
+}
+
+
+.container {
+  background-color: #fafafa;
+  transition: transform 0.4s linear;
+  margin-top: -21px;
+  transform-origin: top left;
+  padding-bottom: 96px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+
+  /* transition: transform 0.4s ease; */
+}
+
+.content {
+  width: 75vw;
+  margin: 0 auto;
+  padding-top: 100Px;
+}
+
+
+.content img {
+  width: 100%;
+}
+
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  z-index: 6;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: #97C8EB;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 2;
+  transition: transform 0.6s ease;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  z-index: 3;
+}
+
+
+i {
+ font-size: 24px
+}
+
+#open {
+  position: absolute;
+  top: 125px;
+  left: 125px;
+}
+
+#close {
+  position: absolute;
+  top: 125px;
+  left: 50px;
+}
+
+.circle.rotate {
+  transform: rotate(-90deg);
+  position: fixed;
+}
+
+
+nav {
+  position: fixed;
+  bottom: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.active {
+  opacity: 1;
+
+}
+
+nav>ul {
+  list-style: none;
+  color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+nav > ul > li {
+ list-style: none;
+ color: white;
+ display: block ruby;
+}
+
+nav>ul li + li {
+ margin-left: 25px;
+}
+
+nav>ul li+li+li{
+  margin-left: 50px;
+}
+
+
+p {
+  letter-spacing: 0.45px;
+  line-height: 1.5;
+}
