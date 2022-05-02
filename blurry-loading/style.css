@@ -14,3 +14,25 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+
+h1 {
+  display: none;
+}
+
+img {
+  filter: blur(0.4rem);
+
+}
+
+.active {
+  filter: blur(0);
+  transition: filter 6s ease;
+}
+
+
+.black {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
