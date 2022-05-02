@@ -18,7 +18,7 @@ function checkBoxes() {
       box.classList.add('active')
     } else {
       // console.log(boxTop);
-      box.classList.add('remove');
+      box.classList.remove('active');
     }
   })
 
